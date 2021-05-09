@@ -1,0 +1,16 @@
+{
+  "name": "node-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "max",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^7.2.0",
+    "fs": "0.0.1-security",
+    "stream": "0.0.2"
+  }
+}
