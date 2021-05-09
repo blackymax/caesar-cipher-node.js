@@ -1,4 +1,4 @@
-# Node.js Caesar cipher CLI tool
+# Caesar cipher CLI tool
 
 The application is used to encrypt and decrypt using the Caesar cipher.
 It transform only latin letters.
@@ -28,21 +28,19 @@ Options:
 
 ## Examples:
 
-`$ node index --action encode --shift 42 --input /input-file.txt --output /output-file.txt`
+`$ node index --action encode --shift 7 --input /input.txt --output /output.txt`
 
-`$ node index -a encode -s 42 -i input-file.txt -o output-file.txt`
+`$ node index -a encode --shift 7 -o output-file.txt`
 
-`$ node index -a encode --shift 42 -o output-file.txt`
+`$ node index -a decode --shift 7 -i input-file.txt`
 
-`$ node index -a decode --shift 42 -i input-file.txt`
-
-`$ node index -a decode -s 42`
+`$ node index -a decode -s 7`
 
 ## Files
 
 * `index.js` - Executable file.
 * `modules/caesar-cipher.js` - Caesar cipher function.
-* `modules/get-data.js` - Options creation and handling.
-* `modules/pipeline-transform.js` - Pipeline creation and handling of  input/output options.
+* `modules/get-data.js` - Options creation and error handling.
+* `modules/pipeline-transform.js` - Pipeline creation.
 * `modules/transform.js` - Transform stream creation.
 * `modules/utils.js` - Function for error custom generating
