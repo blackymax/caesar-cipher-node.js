@@ -1,10 +1,10 @@
-const caesarMachine = (text, shift, mode) => {
+const caesarMachine = (text, shift, mode, oldText) => {
   if (mode !== 'encode') {
     shift *= -1;
   }
   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
   const alphabetArray = alphabet.split('');
-  return text
+  const result = text
     .split('')
     .map((letter) => {
       const searchIdx = alphabetArray.indexOf(letter.toLowerCase());
@@ -24,6 +24,7 @@ const caesarMachine = (text, shift, mode) => {
       }
     })
     .join('');
+    return oldText + result;
 };
 
 module.exports = { caesarMachine };

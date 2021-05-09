@@ -11,6 +11,6 @@
   "dependencies": {
     "commander": "^7.2.0",
     "fs": "0.0.1-security",
-    "minimist": "^1.2.5"
+    "stream": "0.0.2"
   }
 }
